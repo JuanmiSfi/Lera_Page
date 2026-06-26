@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffffff;
+}
+
+.section1 {
+    position: relative;  /* ← .images se posiciona dentro de aquí */
+    width: 100%;
+    height: 62em;
+    overflow: hidden;
+    scroll-snap-align: start;
+    background-color: #fce942;
+}
+
+.nav{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 25px 40px 15px;
+}
+
+.nav-bar{
+  background: #d1d5e0;
+  border-radius: 999px;
+  padding: 10px 40px;
+  width: 70%;
+  max-width: 780px;
+  height: 44px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-Hi{
+    position: absolute;
+    top: 22%;
+    font-size: 50px;
+}
+
+.images{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.images img{
+    width: 35%;
+    object-fit: cover;
+    display: block;
+}
+
+.foto-placeholder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Foto{
+    position: absolute;
+    width: 50%;
+    
+}
+
+.Foto img{
+    border-radius: 5%;
+}
+
+.Foto1{
+    top: 30%;
+    left: 25%;
+}
+
+.Foto3{
+    top:40%;
+    right:55%;
+    width: 50%;
+}
+
+.Foto2{
+    top:65%;
+    right:65%;
+    width: 45%;
+}
+
+.Foto4{
+    top:15%;
+    left: 55%;
+    width: 45%;
+}
+
+.Foto5{
+    top:40%;
+    left: 60%;
+    width: 50%;
+}
+
+.Cta{
+    position: absolute;
+    top: 80%;
+    left: 48%;
+}
+
+/* ── MARQUEE TEXT ── */
+.marquee-wrapper {
+    position: absolute;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  top: 25%;
+  line-height: 1;
+  z-index: 1;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 14s linear infinite;
+}
+
+.marquee-text {
+  font-size: clamp(90px, 14vw, 160px);
+  font-weight: 900;
+  color: #0d0d0d;
+  white-space: nowrap;
+  padding-right: 60px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
