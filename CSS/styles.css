@@ -144,3 +144,12 @@ padding: 25px 40px 15px;
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+
+.section2 {
+    position: relative;  /* ← .images se posiciona dentro de aquí */
+    width: 100%;
+    height: 60em;
+    overflow: hidden;
+    scroll-snap-align: start;
+    background-color: #ffffff;
+}
